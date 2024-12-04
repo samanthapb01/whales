@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, December 3, 2024 2:43:40 PM</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "U:\whales\Scripts\ToolInput2.py", line 46, in &lt;module&gt;
+﻿    the_point = arcpy.Point({
+﻿                ^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\mixins.py", line 433, in __init__
+﻿    setattr(self, attr, value)
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\_base.py", line 108, in _set
+﻿    return setattr(self._arc_object, attr_name, cval(val))
+﻿           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿RuntimeError: Point: Input value is not numeric
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Tuesday, December 3, 2024 2:43:41 PM (Elapsed Time: 1.64 seconds)</msg></messages>

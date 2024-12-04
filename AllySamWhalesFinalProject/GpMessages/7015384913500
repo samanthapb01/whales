@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, December 3, 2024 2:49:16 PM</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "U:\whales\Scripts\ToolInput2.py", line 56, in &lt;module&gt;
+﻿    sst_result = sst_layer.identify(
+﻿                 ^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Lib\site-packages\arcgis\raster\_layer.py", line 1406, in identify
+﻿    params = {"f": "json", "geometry": dict(geometry)}
+﻿                                       ^^^^^^^^^^^^^^
+﻿TypeError: cannot convert dictionary update sequence element #0 to a sequence
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Tuesday, December 3, 2024 2:49:17 PM (Elapsed Time: 1.64 seconds)</msg></messages>

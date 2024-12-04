@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, December 3, 2024 2:45:08 PM</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "U:\whales\Scripts\ToolInput2.py", line 46, in &lt;module&gt;
+﻿    the_point = arcpy.PointGeometry({
+﻿                ^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\geometries.py", line 84, in __init__
+﻿    super().__init__(inputs, spatial_reference, has_z, has_m, has_id)
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\arcobjects\mixins.py", line 119, in __init__
+﻿    self._arc_object = gp.CreateObject('geometry', self.__type_string__,
+﻿                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 512, in &lt;lambda&gt;
+﻿    return lambda *args: val(*gp_fixargs(args, True))
+﻿                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿RuntimeError: Object: CreateObject cannot create geometry from inputs
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Tuesday, December 3, 2024 2:45:10 PM (Elapsed Time: 1.70 seconds)</msg></messages>

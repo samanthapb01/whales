@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Saturday, November 23, 2024 1:58:13 PM</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "U:\whales\AllySamWhalesFinalProject\AllySamWhalesFinalProject.atbx\WhaleRecordExploration.tool\tool.script.execute.py", line 121, in &lt;module&gt;
+﻿  File "U:\whales\AllySamWhalesFinalProject\AllySamWhalesFinalProject.atbx\WhaleRecordExploration.tool\tool.script.execute.py", line 77, in run_tool
+﻿  File "C:\Users\slp87\AppData\Local\ESRI\conda\envs\gis\Lib\_strptime.py", line 567, in _strptime_datetime
+﻿    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+﻿                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Users\slp87\AppData\Local\ESRI\conda\envs\gis\Lib\_strptime.py", line 349, in _strptime
+﻿    raise ValueError("time data %r does not match format %r" %
+﻿ValueError: time data 'row_id' does not match format '%Y-%m-%d'
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Saturday, November 23, 2024 1:58:16 PM (Elapsed Time: 2.82 seconds)</msg></messages>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, December 3, 2024 2:47:02 PM</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "U:\whales\Scripts\ToolInput2.py", line 52, in &lt;module&gt;
+﻿    end_datetime = start_datetime + timedelta(hours=1)  # Add one hour to define the end time
+﻿                   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+﻿TypeError: can only concatenate str (not "datetime.timedelta") to str
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Tuesday, December 3, 2024 2:47:04 PM (Elapsed Time: 1.64 seconds)</msg></messages>

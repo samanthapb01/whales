@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Saturday, November 23, 2024 2:23:47 PM</msg><msg code="-2147467259" type="100">﻿  File "U:\whales\Scripts\ToolInputScript.py", line 31
+    gis = GIS("home)
+              ^
+﻿SyntaxError: unterminated string literal (detected at line 31)
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Saturday, November 23, 2024 2:23:48 PM (Elapsed Time: 1.10 seconds)</msg></messages>

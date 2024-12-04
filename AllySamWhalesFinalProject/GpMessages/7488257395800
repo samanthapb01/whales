@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, December 3, 2024 2:57:09 PM</msg><msg code="-2147467259" type="100">﻿  File "U:\whales\Scripts\ToolInput2.py", line 76
+    arcpy.AddMessage(f'At the point ({the_point['x']}, {the_point['y']}) on {date_query} in {observation_year} at {observation_time} the SST was {the_sst} degrees Celsius.')
+                                                 ^
+﻿SyntaxError: f-string: unmatched '['
+</msg><msg code="0" type="0">Failed script Whale Record Exploration...</msg><msg code="-2147467259" type="100">Failed to execute (WhaleRecordExploration).</msg><msg code="0" type="3">Failed at Tuesday, December 3, 2024 2:57:09 PM (Elapsed Time: 0.09 seconds)</msg></messages>

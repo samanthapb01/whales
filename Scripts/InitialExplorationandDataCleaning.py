@@ -3,6 +3,10 @@
 #Duke University Nicholas School of the Environment
 # November 22, 2024
 
+#This script is an initial exploration of the data and includes some data organization and wrangling. 
+#This is heavily based on John's demo script in ExtractDataToPoint_JohnsDemo.ipynb
+
+
 #Import packages
 from arcgis import GIS
 from arcgis.raster import ImageryLayer, Raster
@@ -47,25 +51,8 @@ gdf_whales_filtered['date'] = gdf_whales_filtered['date_time'].dt.date
 gdf_whales_filtered['time'] = gdf_whales_filtered['date_time'].dt.time
 gdf_whales_filtered.info()
 
-#Search for the SST layer
-search_result = gis.content.search(
-    query="SST owner:esri", 
-    outside_org=True,
-    item_type="Imagery Layer")
-
-#Reveal the results
-search_result
-
-#Extract the 3rd item from the search results 
-sst_item = search_result[2]
-sst_item
-
-#List the layers in the SST item
-sst_layers = sst_item.layers
-sst_layers
-
-#Fetch the one (and only) layer in the SST item and reveal its type
-sst_layer = sst_layers[0]
+#Access SST layer
+sst_layer = gis.content.get('100a26c4d15445ffadab0d04e536b9c1').layers[0]
 type(sst_layer)
 
 #Confirm the SST layer has multidimensions
@@ -87,12 +74,6 @@ sst_raster.get_dimension_attributes(variable_name='sst', dimension_name='StdTime
 time_values = sst_raster.get_dimension_values(variable_name='sst', dimension_name='StdTime')
 print(len(time_values))
 time_values[0:10]
-
-#Create a point, using the lat and lng coordinates and the spatial reference of WGS84
-#the_point = gdf_whales_filtered.loc[0,'geometry']
-
-#Show the type of our point
-type(the_point)
 
 # Ensure the point is in the correct format for the identify function (convert it to a dictionary if needed)
 the_point = Point({
@@ -124,4 +105,7 @@ sst_result
 the_sst = float(sst_result['value'])
 
 #Report the SST value
-print(f'At the point ({the_point.x}, {the_point.y}) on {start_date} the SST was {the_sst} degrees Celsius')
+print(f'At the point ({the_point.x}, {the_point.y}) on {start_date} the SST was {the_sst} degrees Celsius.')
+
+#Save updated file as csv
+gdf_whales_filtered.to_csv('U:\\whales\\Data\\updated_whales_filtered.csv', index=False)
