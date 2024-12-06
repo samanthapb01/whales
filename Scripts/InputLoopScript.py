@@ -1,12 +1,12 @@
-#Samantha Pasciullo Boychuck & Ally Finkbeiner
-#slp87@duke.edu & amf145@duke.edu
-#Duke University Nicholas School of the Environment
-#November 22, 2024
+# Samantha Pasciullo Boychuck & Ally Finkbeiner
+# slp87@duke.edu & amf145@duke.edu
+# Duke University Nicholas School of the Environment
+# November 22, 2024
 
-#This script prompts the user to input a month, day, and year.
-#Then, it prints a statement that tells the user if an observation occurred on that day.
-#If an observation was recorded, it prints the associated coordinates, time, and SST.
-#This Python script is comparable in function to our ToolInputScript1.py.
+# This script prompts the user to input a month, day, and year.
+# Then, it prints a statement that tells the user if an observation occurred on that day.
+# If an observation was recorded, it prints the associated coordinates, time, and SST.
+# This Python script is comparable in function to our ToolInputScript1.py.
 
 
 # Import packages
@@ -40,12 +40,12 @@ gdf_whales = gpd.GeoDataFrame(df, geometry=geom, crs=4326)
 mask = (gdf_whales['longitude'] < 177) & (gdf_whales['longitude'] > -169)
 gdf_whales_filtered = gdf_whales.loc[mask]
 
-# Format data time column and split
+# Format date time column and split
 gdf_whales_filtered['date_time'] = pd.to_datetime(gdf_whales_filtered['date_time'])
 gdf_whales_filtered['date'] = gdf_whales_filtered['date_time'].dt.date
 gdf_whales_filtered['time'] = gdf_whales_filtered['date_time'].dt.time
 
-#Access SST layer
+# Access SST layer
 sst_layer = gis.content.get('100a26c4d15445ffadab0d04e536b9c1').layers[0]
 
 # Convert the SST layer to a multidimensional raster object

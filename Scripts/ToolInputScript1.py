@@ -1,16 +1,17 @@
-#Samantha Pasciullo Boychuck & Ally Finkbeiner
-#slp87@duke.edu & amf145@duke.edu
-#Duke University Nicholas School of the Environment
-#December 3, 2024
+# Samantha Pasciullo Boychuck & Ally Finkbeiner
+# slp87@duke.edu & amf145@duke.edu
+# Duke University Nicholas School of the Environment
+# December 3, 2024
 
-#This script is meant to be attached to an ArcGIS Pro tool. It is our initial trial of making a tool script.
-#It prompts the user to input a month, day, and year. This script only runs if year is inputted.
-#Ideally, we wanted year to be optional. (We figure that out in ToolInputScriptFinal.py...)
-#It prints a statement that tells the user if an observation occurred on that day.
-#If an observation was recorded, it prints the associated coordinates, time, and SST.
-#This tool script is comparable in function to our InputLoopScript.py.
+# This script is meant to be attached to an ArcGIS Pro tool. It is our initial trial of making a tool script.
+# It prompts the user to input a month, day, and year. This script only runs if year is inputted.
+# Ideally, we wanted year to be optional. (We figure that out in ToolInputScriptFinal.py...)
+# It prints a statement that tells the user if an observation occurred on that day.
+# If an observation was recorded, it prints the associated coordinates, time, and SST.
+# This tool script is comparable in function to our InputLoopScript.py.
 
 
+# Import packages
 import arcpy
 import pandas as pd
 from datetime import datetime, timedelta
